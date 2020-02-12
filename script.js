@@ -2,8 +2,10 @@ function carregar (){
     var msg = document.getElementById("mensagem")
     var img = document.getElementById("img")
     var data = new Date()
+    var min = new Date()
+    var minute = min.getMinutes()
     var hora = data.getHours()
-    msg.innerHTML = ` Agora são ${hora} horas `
+    msg.innerHTML = ` Agora são ${hora}h e ${minute} minutos `
     if (hora >= 0 && hora < 12){
         // BOM DIA 
         img.src = "img_dia.jpg"
